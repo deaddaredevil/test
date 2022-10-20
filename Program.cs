@@ -10,10 +10,10 @@
             bool completedWork;
             string employeeName;
             int overtime;
-            float bonus;
+            short bonus;
             float salaryCount;
             double taxation;
-            float prepayment;
+            uint prepayment;
             float amountToIssue;
         }
     }
