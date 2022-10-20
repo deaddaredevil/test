@@ -7,7 +7,7 @@
             int standartTime;
             float workTime;
             double velueWork;
-            bool completedWork;
+            bool workIsCompleted;
             string employeeName;
             int overtime;
             short bonus;
