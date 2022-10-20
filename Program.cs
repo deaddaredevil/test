@@ -7,9 +7,9 @@
             int standartTime;
             float workTime;
             double velueWork;
-            float completedWork;
+            bool completedWork;
             string employeeName;
-            int rework;
+            int overtime;
             float bonus;
             float salaryCount;
             double taxation;
