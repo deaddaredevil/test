@@ -4,17 +4,20 @@
     {
         static void Main()
         {
-            int standartTime;
-            float workTime;
-            double velueWork;
-            bool workIsCompleted;
-            string employeeName;
-            int overtime;
-            short bonus;
-            float salaryCount;
-            double taxation;
-            uint prepayment;
-            float amountToIssue;
+            Random rand = new Random();
+            int specifiedNumber = rand.Next(0, 100);
+            int initialNumber = 2, degreeMultiplier = 2;
+            int targetMultiplier = 1;
+            int targetNumber = initialNumber * targetMultiplier;
+
+            while (targetNumber <= specifiedNumber)
+            {
+                targetMultiplier++;
+                targetNumber *= degreeMultiplier;
+            }
+
+            Console.WriteLine("искомое число в степени " + (targetNumber) + " это 2 в степени " + targetMultiplier + ".");
+            Console.WriteLine("заданное число " + specifiedNumber + ".");
         }
     }
 }
