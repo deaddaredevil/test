@@ -4,11 +4,12 @@
     {
         static void Main()
         {
-            Random rand = new Random();
-            int specifiedNumber = rand.Next(0, 100);
-            int initialNumber = 2, degreeMultiplier = 2;
+            Random randomNumber = new Random();
+            int specifiedNumber = randomNumber.Next(0, 100);
+            int initialNumber = 2;
+            int degreeMultiplier = 2;
             int targetMultiplier = 1;
-            int targetNumber = initialNumber * targetMultiplier;
+            int targetNumber = 1;
 
             while (targetNumber <= specifiedNumber)
             {
@@ -16,7 +17,7 @@
                 targetNumber *= degreeMultiplier;
             }
 
-            Console.WriteLine("искомое число в степени " + (targetNumber) + " это 2 в степени " + targetMultiplier + ".");
+            Console.WriteLine("искомое число в степени " + (targetNumber) + " это " + (initialNumber) + " в степени " + targetMultiplier + ".");
             Console.WriteLine("заданное число " + specifiedNumber + ".");
         }
     }
